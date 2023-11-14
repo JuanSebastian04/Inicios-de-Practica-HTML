@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de Gatos</title>
+</head>
+<body>
+    <main>
+    <h1>fotos de gatos</h1>
+    <!-- Se secciona con etiqueta <section> -->
+    <section>
+    <h2>fotos de gatos</h2>
+    <!-- Ctrl + k + c para poder añadir comentarios -->
+    <!-- Añadir enlace a fotos de gatos -->
+    <p>Ver más <a target=_blank href="https://freecatphotoapp.com">fotos de gatos</a> en nuestra galería</p>
+    <!-- Añadir enlace a una imagen -->
+    <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Un simpático gato tumbado boca arriba"></a>
+    <!-- Se cierra sección con la etiqueta de cierre </section> -->
+    </section>
+    <section>
+        <h2>Lista de Gatos</h2>
+        <h3>Cosas que les gustan a los gatos:</h3>
+        <!-- Lista desordenada <ul></ul> -->
+        <ul>
+            <!-- Etiqueta <li></li> para crear una lista -->
+            <li>Mordazas para gatos</li>
+            <li>Punteros láser</li>
+            <li>Lasaña</li>
+        </ul>
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="Un trozo de lasagna en un plato">
+            <!-- Elemento <figcaption><figcaption> para describir una imagen -->
+            <!-- Elemento <em></em> para enfatizar palabras o un grupo de palabras -->
+            <figcaption>Los gatos <em>aman</em> la Lasaña</figcaption>
+        </figure>
+        <h3>Top 3 cosas que odian los gatos:</h3>
+        <!-- Lista ordenada <ol></ol> -->
+        <ol>
+            <li>Truenos</li>
+            <li>Otros gatos</li>
+            <li>Tratamiento antipulgas</li>
+        </ol>
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg">
+            <!-- El elemento <strong></strong> se utiliza para indicar que una parte de un texto es importante o urgente. -->
+            <figcaption>Los gatos <strong>odian</strong> otros gatos</figcaption>
+        </figure>
+    </section>
+    <section>
+        <h2>Cat Form</h2>
+        <!-- El atributo <action></action> indica, dónde deben enviarse los datos del formulario -->
+        <!-- Por ejemplo, <form action="/submit-url"></form> le dice al navegador que los datos del formulario deben ser enviados a la ruta /submit-url. -->
+        <Form action="https://freecatphotoapp.com/submit-cat-photo"></action>
+        <!-- El elemento input te permite recolectar datos desde un formulario web de diferentes formas. Al igual que los elementos img, los elementos input son de auto-cierre y no necesitan etiquetas de cierre. -->
+        <!-- input -->
+        <!-- Hay diferentes tipos de elementos input, los cuales los puedes crear con el atributo type. -->
+        <!-- Puedes crear fácilmente un campo de contraseña (password), un botón de reinicio (reset) o un control para permitir a los usuarios seleccionar un archivo desde su computadora. -->
+        <!-- Para evitar que un usuario entregue su formulario incompleto se añade el atributo required  -->
+        <input required type="text" placeholder="Foto gato url">
+        <!-- Con el elemento <button></button> se crea un botón -->
+        <button>Submit</button>
+    </Form>
+    </section>
+    </main>  
+
+</body>
+</html>
