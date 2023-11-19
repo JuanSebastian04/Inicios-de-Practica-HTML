@@ -48,7 +48,7 @@
         </figure>
     </section>
     <section>
-        <h2>Cat Form</h2>
+        <h2>Forma del gato</h2>
         <!-- El atributo <action></action> indica, dónde deben enviarse los datos del formulario -->
         <!-- Por ejemplo, <form action="/submit-url"></form> le dice al navegador que los datos del formulario deben ser enviados a la ruta /submit-url. -->
         <Form action="https://freecatphotoapp.com/submit-cat-photo"></action>
@@ -59,8 +59,16 @@
         <!-- Botón de radio <input type="radio"> -->
         <!-- Los elementos label se utilizan para ayudar a asociar el texto a un elemento input con el propio elemento input (especialmente para las tecnologías de asistencia como los lectores de pantalla) -->
         <!-- El atributo id se utiliza para identificar elementos HTML específicos. Cada atributo id debe tener un valor único, diferente a los demás valores id de la página. -->
+        <!-- El elemento <fieldset></fieldset> se utiliza para agrupar elementos input y label relacionados dentro de un formulario web. -->
+        <fieldset>    
+            <!-- El elemento legend actúa como una leyenda/descripción, para el contenido del elemento fieldset. -->
+        <legend>¿Su gato es de interior o exterior?</legend>
         <label><input value="Interior" id=Interior type="radio" name="Interior-Exterior">Interior</label>
         <label><input value="Exterior" id=Exterior type="radio" name="Interior-Exterior">Exterior</label>
+        </fieldset>
+        <fieldset>
+            <legend>¿Cual es la personalidad de su gato</legend>
+        </fieldset>
         <!-- Para evitar que un usuario entregue su formulario incompleto se añade el atributo required  -->
         <input required type="text" placeholder="Foto gato url">
         <!-- Con el elemento <button></button> se crea un botón -->
